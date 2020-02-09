@@ -3,7 +3,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "bin": {
-    "checkdep": "bin/index.js"
+    "fyver": "bin/index.js"
   },
   "typings": "dist/index.d.ts",
   "files": [
@@ -28,9 +28,9 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "checkdep",
+  "name": "fyver",
   "author": "Graeme Funk",
-  "module": "dist/checkdep.esm.js",
+  "module": "dist/fyver.esm.js",
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/chalk": "^2.2.0",

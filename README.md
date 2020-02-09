@@ -1,27 +1,19 @@
-# TSDX Bootstrap
+satis*fy* *ver*sion
 
-This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
+### What it does
 
-## Local Development
+Tool to check if your dependencies support a certain version of a package
+Will return the minimum version you would have to upgrade the dependency to
 
-Below is a list of commands you will probably find useful.
+### Useage
 
-### `npm start` or `yarn start`
+Check all the depencies in your package.json
+`fyver react-native 0.61.0`
 
-Runs the project in development/watch mode. Your project will be rebuilt upon changes. TSDX has a special logger for you convenience. Error messages are pretty printed and formatted for compatibility VS Code's Problems tab.
+Check a specific dependency in your package.json using the currently installed version as the minimum version to check
+`fyver react-native 0.61.0 react-native-video --dep`
 
-<img src="https://user-images.githubusercontent.com/4060187/52168303-574d3a00-26f6-11e9-9f3b-71dbec9ebfcb.gif" width="600" />
+Check a specific package regardless of the version (does not have to be a dependency)
+`fyver react-native 0.61.0 react-native-video`
 
-Your library will be rebuilt if you make edits.
 
-### `npm run build` or `yarn build`
-
-Bundles the package to the `dist` folder.
-The package is optimized and bundled with Rollup into multiple formats (CommonJS, UMD, and ES Module).
-
-<img src="https://user-images.githubusercontent.com/4060187/52168322-a98e5b00-26f6-11e9-8cf6-222d716b75ef.gif" width="600" />
-
-### `npm test` or `yarn test`
-
-Runs the test watcher (Jest) in an interactive mode.
-By default, runs tests related to files changed since the last commit.
